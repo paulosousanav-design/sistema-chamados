@@ -121,9 +121,9 @@ export default function PainelAdminCompleto() {
 
       if (errorTecnicos) {
         const { data: dataVelha } = await supabase
-          .from('tecnicos_parceiros')
-          .select('id, nome_fantasia, nome, whatsapp, cep');
-        dataTecnicos = dataVelha;
+        .from('tecnicos_parceiros')
+.select('id, nome_fantasia, nome, whatsapp, cep');
+dataTecnicos = dataVelha;
       }
       
       setTecnicos((dataTecnicos || []).map(tec => ({ ...tec, id: String(tec.id) })));
