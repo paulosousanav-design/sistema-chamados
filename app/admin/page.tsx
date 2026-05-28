@@ -122,7 +122,7 @@ export default function PainelAdminCompleto() {
       if (errorTecnicos) {
         const { data: dataVelha } = await supabase
           .from('tecnicos_parceiros')
-          .select('id, nome_fantasia, nome, whatsapp');
+          .select('id, nome_fantasia, nome, whatsapp, cep');
         dataTecnicos = dataVelha;
       }
       
