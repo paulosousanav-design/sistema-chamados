@@ -1,4 +1,3 @@
-import './globals.css';
 
 export const metadata = {
   title: 'Chame o Técnico - Painel de Chamados',
