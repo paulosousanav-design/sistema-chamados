@@ -24,7 +24,8 @@ interface OrdenServico {
 }
 
 interface TecnicoParceiro {
-  id: string; 
+  id: string;
+  cnpj: item.cnpj
   nome_fantasia: string;
   nome: string;
   whatsapp: string;
