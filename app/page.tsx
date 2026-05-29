@@ -125,6 +125,49 @@ export default function Home() {
       boxShadow: '0 10px 15px -3px rgba(255, 122, 0, 0.2)'
     }
   };
+    },
+    card: {
+      width: '100%',
+      maxWidth: '650px',
+      backgroundColor: '#16213E',
+      border: '1px solid #2E3B63',
+      borderRadius: '16px',
+      padding: '24px',
+      boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.5)'
+    },
+    input: {
+      width: '100%',
+      backgroundColor: '#0B1026',
+      border: '1px solid #2E3B63',
+      borderRadius: '8px',
+      padding: '12px',
+      fontSize: '14px',
+      color: '#FFFFFF',
+      marginTop: '4px',
+      boxSizing: 'border-box' as const,
+      outline: 'none'
+    },
+    label: {
+      fontSize: '14px',
+      fontWeight: 'bold',
+      color: '#B8C0CC',
+      display: 'block'
+    },
+    btnSubmit: {
+      width: '100%',
+      backgroundColor: '#FF7A00',
+      color: '#FFFFFF',
+      fontWeight: '900',
+      padding: '16px',
+      borderRadius: '12px',
+      border: 'none',
+      cursor: 'pointer',
+      textTransform: 'uppercase' as const,
+      letterSpacing: '1.5px',
+      marginTop: '16px',
+      boxShadow: '0 10px 15px -3px rgba(255, 122, 0, 0.2)'
+    }
+  };
 
   const handleWhatsappChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let input = e.target.value.replace(/\D/g, ''); 
