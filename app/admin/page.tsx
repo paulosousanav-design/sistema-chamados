@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -24,8 +23,7 @@ interface OrdenServico {
 }
 
 interface TecnicoParceiro {
-  id: string;
-  cnpj: item.cnpj
+  id: string; 
   nome_fantasia: string;
   nome: string;
   whatsapp: string;
@@ -123,8 +121,8 @@ export default function PainelAdminCompleto() {
 
       if (errorTecnicos) {
         const { data: dataVelha } = await supabase
-        .from('tecnicos_parceiros')
-        .select('id, nome_fantasia, nome, whatsapp, cep');
+          .from('tecnicos_parceiros')
+          .select('id, nome_fantasia, nome, whatsapp');
         dataTecnicos = dataVelha;
       }
       
